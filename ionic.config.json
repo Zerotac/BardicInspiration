@@ -1,0 +1,7 @@
+{
+  "name": "bardic_inspiration",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

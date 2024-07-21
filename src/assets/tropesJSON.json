@@ -1,0 +1,59 @@
+[
+  {
+    "idTrope": "chosenOne",
+    "name": "The Chosen One",
+    "infoText": "The 'Chosen One' trope features a character who is selected by fate, prophecy, or a higher power to accomplish a significant, often world-saving task. This character typically possesses unique abilities or qualities that set them apart from others and make them the only one capable of achieving this mission.",
+    "bardComment": "The 'Chosen One' trope remains popular due to its themes of empowerment and destiny, allowing players to vicariously experience the journey of an ordinary individual rising to extraordinary challenges.",
+    "prompt": "Often, the Chosen One is identified through a prophecy or divine revelation that foretells their role in a significant event. The Chosen One usually has unique abilities or talents that are crucial for their mission. These abilities may be innate or bestowed upon them. Isolation and Outsider Status. Initially, Chosen Ones may be reluctant to accept their role, feeling unworthy or overwhelmed by the responsibility. Over time, they grow into their role and embrace their destiny​. They often receive guidance from a mentor figure who helps them understand and harness their abilities.",
+    "isSelected": false
+  },
+  {
+    "idTrope": "beNormal",
+    "name": "I Just Want to Be Normal",
+    "infoText": "The 'I Just Want to Be Normal' trope features characters who, despite having special powers or extraordinary circumstances, long for an ordinary life free from the burdens of their exceptional abilities or situations.\"",
+    "bardComment": "This trope resonates with themes of identity, belonging, and the universal human desire to be accepted for who we are.",
+    "prompt": "They have a desire for the ordinary life, they often crave the simplicity and peace of normalcy. Possessing special powers or unique status becomes a source of stress, fear, or unwanted attention. These characters often view their abilities as a curse rather than a gift.  Their unique traits often lead to feelings of isolation, making it difficult for them to relate to others and fit in with regular society. The character's journey usually involves balancing their desire for normalcy with the acceptance of their true nature and responsibilities. This internal conflict drives much of their personal growth.",
+    "isSelected": false
+  },
+  {
+    "idTrope": "antiHero",
+    "name": "The Anti-Hero",
+    "infoText": "An anti-hero is a central character in a story who lacks conventional heroic attributes such as idealism, courage, and morality. These characters often display traits that are more in line with villains than traditional heroes, yet they still elicit sympathy or admiration from the audience.",
+    "bardComment": "Anti-heroes are a staple in modern storytelling, particularly in the 'Golden Age of Television', with characters like Tony Soprano, Gregory House, and Don Draper becoming iconic examples of this trope​. They offer a nuanced and often more compelling alternative to the traditional hero, highlighting the complexities and moral ambiguities of real life.",
+    "prompt": "Anti-heroes operate in grey areas of morality, often making questionable decisions that serve their interests or a greater good only they can see​​. Their actions are driven by complex and often selfish motivations, including personal vendettas, survival, or a skewed sense of justice​. They possess significant flaws, such as arrogance, cynicism, or a troubled past that influences their actions and perspectives​.  Anti-heroes often find themselves in heroic roles reluctantly, being pushed into action by circumstance rather than a desire to do good​.",
+    "isSelected": false
+  },
+  {
+    "idTrope": "dumbJock",
+    "name": "The Dumb Jock",
+    "infoText": "A character archetype depicting a physically strong and athletic individual who lacks intellectual acuity. Despite their lack of intelligence, these characters are often portrayed as endearing and good-natured.",
+    "bardComment": "This trope often serves to contrast with more intellectual or cunning characters, highlighting different forms of strength and value within a story.",
+    "prompt": "The Dumb Jock is typically very athletic, excelling in sports and physical activities. They are often the star player on a sports team or have a notable physical presence. These characters are not academically inclined and often struggle with schoolwork or complex problem-solving. Their lack of intelligence is a key part of their characterization. They are kind-Hearted and Loyal. Dumb Jocks often have a simple view of the world and are straightforward in their actions and intentions. ",
+    "isSelected": false
+  },
+  {
+    "idTrope": "arrangedMarriage",
+    "name": "Arranged Marriage",
+    "infoText": "An arranged marriage is a union where the spouses are selected by someone other than the individuals getting married, typically by family members or guardians. This trope can be used to explore themes of duty, tradition, and personal choice.",
+    "bardComment": "This trope offers rich storytelling possibilities, from dramatic conflicts and emotional growth to commentary on societal norms and individual autonomy",
+    "prompt": "Parents or guardians typically arrange the marriage, often for social, economic, or political reasons​. One or both parties may initially resist the arrangement, leading to conflict and character development​. Often depicted within cultures where arranged marriages are a tradition, highlighting the clash between modern individualism and traditional practices​. The trope frequently explores the gradual development of affection or love between the spouses, moving from strangers or reluctant partners to a genuine, loving relationship​.  Commonly used in historical and fantasy genres, where social and political alliances are critical​.",
+    "isSelected": false
+  },
+  {
+    "idTrope": "dealDevil",
+    "name": "Deal with the Devil",
+    "infoText": "A character makes a pact with a devilish figure, trading their soul or something of great value for power, wealth, knowledge, or other desires. This deal often comes with severe consequences, revealing moral and ethical dilemmas.",
+    "bardComment": "This trope remains popular across various genres, reflecting the timeless fascination with the human struggle against temptation and the high cost of easy gains.",
+    "prompt": "Characters often enter these deals due to overwhelming desires for power, love, revenge, or knowledge, making them vulnerable to temptation​​. The trope explores themes of good versus evil, highlighting the internal and external struggles of the character as they deal with the consequences of their choice. The devilish figure typically includes hidden clauses or twists in the deal, leading to unexpected and often dire consequences for the character​​. Stories frequently revolve around the character's journey towards either redemption by overcoming their greed or ultimate damnation as a result of their choices​. Characters may undergo significant changes, both mentally and physically, as a result of the deal, symbolizing their moral decay or transformation​.",
+    "isSelected": false
+  },
+  {
+    "idTrope": "hermit",
+    "name": "The Hermit",
+    "infoText": "The Hermit trope involves a character who voluntarily isolates themselves from society, often seeking solitude for various reasons.",
+    "bardComment": "This trope is frequently used across various media to explore themes of self-discovery, wisdom, and the consequences of isolation on personal growth.",
+    "prompt": "The Hermit typically withdraws due to trauma, guilt, or a desire for spiritual enlightenment. They often reside in remote places like mountains, forests, or deserts, away from civilization.  Despite their isolation, they are often portrayed as wise or possessing esoteric knowledge. They may serve as a mentor to younger characters, reluctantly imparting their wisdom. Often represents the balance between humanity and nature, or the search for deeper truths. Common character arcs include reintegrating into society or passing on their knowledge before their death.",
+    "isSelected": false
+  }
+
+]

@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Bardic Inspiration</ion-title>
+    <app-progressbar></app-progressbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Bardic Inspiration</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+
+    <!--Bard-->
+    <div>
+      <img id="bardImg" src="../../assets/bard.png" alt="Image of the Bard">
+    </div>
+    <div id="text-container">
+      <strong>Bard:</strong>
+      <p>"A name can tell you a lot about a person. What will your character's name be?"</p>
+    </div>
+
+    <!--Input for the character name-->
+    <ion-input id="name_input" labelPlacement="stacked" label="Character Name" [(ngModel)]="charName"
+      placeholder="Your name"></ion-input>
+
+    <!--Statically defined suggestions for names. Could also be generated dynamically via the ChatGPT API  in a next step and selected by the user.-->
+    <p>
+      <b>Suggestions</b> <br>
+      Atlas <br>
+      Thamir<br>
+      Varis<br>
+      Fuoco<br>
+      Brebin<br>
+      Callie<br>
+    </p>
+
+
+    <ion-button [disabled]="!charName" color="dark" (click)="nextPageButton()">Venture forth!</ion-button>
+
+  </div>
+
+
+
+
+
+</ion-content>

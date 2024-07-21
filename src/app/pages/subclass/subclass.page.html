@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Bardic Inspiration</ion-title>
+    <app-progressbar></app-progressbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Bardic Inspiration</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+
+
+
+  <div id="container">
+
+    <div id="bardContainer">
+
+      <img id="bardImg" src="../../../assets/bard2.png" alt="Image of the Bard">
+
+      <div id="text-container">
+        <strong>Bard:</strong>
+        <p>
+          {{infoText}}</p>
+      </div>
+    </div>
+
+    <div>
+      <div *ngIf="subclassElements; else loading" class="subclass-container">
+
+        <!--dynamically load subclass elements in the UI (this would also be a better solution for the class-page)-->
+        <div *ngFor="let imageUrl of subclassElements; let i = index">
+          <img [ngClass]="{'selected' : imageUrl.isSelected, 'notSelected': !imageUrl.isSelected}"
+            (click)=subclassClick(imageUrl) id="image{{ i + 1 }}" class="subclass-image image{{ i + 1 }}"
+            [src]="imageUrl.url" alt="Image {{ i + 1 }}" (mouseout)="onLeave(imageUrl)"
+            (mouseover)="hoverFunction(imageUrl)">
+          <div [hidden]="!imageUrl.isHovered" (mouseover)="hoverFunction(imageUrl)" (mouseout)="onLeave(imageUrl)"
+            class="hover-text himage{{i + 1 }}">
+            {{hoverText}}
+          </div>
+
+        </div>
+
+
+        <img [src]="centerImgURL" alt="Central" class="central-image">
+
+        <div class="button-wrapper">
+          <ion-button color="dark" (click)="backButton()">Go Back</ion-button>
+          <ion-button [disabled]="!(selectedSubClass)" color="dark" (click)="nextPageButton()">Confirm</ion-button>
+        </div>
+
+      </div>
+
+    </div>
+    <ng-template #loading>
+      <p>Loading images...</p>
+    </ng-template>
+
+
+  </div>
+
+</ion-content>
