@@ -11,7 +11,7 @@ export class ChatgptService {
 
 
   private story: string = "";
-  private apiKey: string = 'sk-proj-lxf9BubdygdoaRw8ntfCT3BlbkFJ91hM8ABLYsq0H8gS5iDO';  // Replace with your actual API key
+  private apiKey: string = 'API_KEY_HERE';  // Replace with your actual API key
   private apiUrl: string = 'https://api.openai.com/v1/chat/completions';
 
   //to remember the conversation with the API
