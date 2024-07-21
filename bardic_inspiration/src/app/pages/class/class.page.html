@@ -1,0 +1,92 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Bardic Inspiration</ion-title>
+    <app-progressbar></app-progressbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Bardic Inspiration</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <div id="container">
+    <!--Bard-->
+    <div id="bardContainer">
+
+      <img id="bardImg" src="../../../assets/bard2.png" alt="Image of the Bard">
+
+      <div id="text-container">
+        <strong>Bard:</strong>
+        <p>
+          {{infoText}}</p>
+      </div>
+    </div>
+
+
+    <!--Circle with the different DnD-classes (in retrospect, it could have been more scalable for more classes)-->
+    <div class="circle-container">
+      <img [ngClass]="{'centralSilhouette noOpacity' : !currClass, 'centralSilhouette addOpacity': currClass}"
+        [src]="mainImageUrl" alt="Central" class="central-image">
+      <img [hidden]="!classSelected" [src]="imageUrl" alt="Central" class="central-image">
+      <div class="central-text">
+        {{selectedText}}
+      </div>
+
+      <div class="button-wrapper">
+        <ion-button class="back-button" color="dark" (click)="backButton()">Go Back</ion-button>
+        <ion-button class="confirm-button" [disabled]="!(currClass)" color="dark"
+          (click)="nextPageButton()">Confirm</ion-button>
+
+
+      </div>
+
+      <!--Image of a DnD-Class-->
+      <img [ngClass]="{'selected' : clericSelected, 'notSelected': !clericSelected}" (mouseout)="onLeave()"
+        (mouseover)="hoverFunction('cleric')" (click)="clericClick()" src="../../../assets/cleric.png"
+        alt="Image of the cleric class" class="circle-image image1">
+      <!--Name of the DnD-class. Displayed under the image of the DnD-class when the user hovers over the class-->
+      <div [hidden]="!isHoveredImg1" (mouseover)="hoverFunction('cleric')" (mouseout)="onLeave()"
+        class="hover-text hImage1">
+        {{hoverText}}
+      </div>
+
+      <img [ngClass]="{'selected' : wizardSelected, 'notSelected': !wizardSelected}" (mouseout)="onLeave()"
+        (mouseover)="hoverFunction('wizard')" (click)="wizardClick()" src="../../../assets/wizard.png"
+        alt="Image of the wizard class" class="circle-image image2">
+      <div [hidden]="!isHoveredImg2" (mouseover)="hoverFunction('wizard')" (mouseout)="onLeave()"
+        class="hover-text hImage2">
+        {{hoverText}}
+      </div>
+
+      <img [ngClass]="{'selected' : fighterSelected, 'notSelected': !fighterSelected}" (mouseout)="onLeave()"
+        (mouseover)="hoverFunction('fighter')" (click)="fighterClick()" src="../../../assets/fighter.png"
+        alt="Image of the fighter class" class="circle-image image3">
+      <div [hidden]="!isHoveredImg3" (mouseover)="hoverFunction('fighter')" (mouseout)="onLeave()"
+        class="hover-text hImage3">
+        {{hoverText}}
+      </div>
+
+      <!--Placeholder for more DnD-Classes -->
+      <img src="../../../assets/placeholder.png" alt="Image 4" class="circle-image image4">
+      <img src="../../../assets/placeholder.png" alt="Image 5" class="circle-image image5">
+      <img src="../../../assets/placeholder.png" alt="Image 6" class="circle-image image6">
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+</ion-content>

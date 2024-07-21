@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Bardic Inspiration</ion-title>
+    
+    <app-progressbar></app-progressbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Bardic Inspiration</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+
+    <!--Bard-->
+    <div>
+      <img id="bardImg" src="../../assets/bard.png" alt="Image of the Bard">
+    </div>
+    <div id="text-container">
+      <strong>Bard:</strong>
+      <p>"{{charName}} ... what a beautiful name! <br>
+        How will others refer to your character when talking about them?"</p>
+    </div>
+
+    <div>
+
+      <div>
+        <!--he/him -->
+        <ion-button class="pronButton" #hebutton [color]="heColorParam" [fill]="heFillParam"
+          [disabled]="disableHeButton" (click)="heButtonClicked(ownPronInput)">he/him</ion-button>
+
+      </div>
+      <div>
+        <!--she/her -->
+        <ion-button class="pronButton" #shebutton [color]="sheColorParam" [fill]="sheFillParam"
+          [disabled]="disableSheButton" (click)="sheButtonClicked(ownPronInput)">she/her</ion-button>
+      </div>
+      <!--they/them -->
+      <ion-button class="pronButton" #theybutton [color]="theyColorParam" [fill]="theyFillParam"
+        [disabled]="disableTheyButton" (click)="theyButtonClicked(ownPronInput)">they/them</ion-button>
+
+      <!--own pronouns -->
+      <ion-input id="own_pronoun" #ownPronInput labelPlacement="stacked" label="Own Pronouns" [(ngModel)]="ownpronouns"
+        placeholder="I enter own pronouns" (ionInput)="onInput($event)"></ion-input>
+
+    </div>
+
+    <ion-button color="dark" (click)="backButton()">Go Back</ion-button>
+    <ion-button [disabled]="!pronouns" color="dark" (click)="nextPageButton()">Confirm</ion-button>
+
+
+  </div>
+
+
+
+
+</ion-content>
