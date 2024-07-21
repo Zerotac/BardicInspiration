@@ -11,4 +11,5 @@ As **this application is a prototype, Ionic must be installed** to start the pro
 6. a browser window should open (localhost)
 7. have fun with the prototype
 
-**The source code can be found under the following path: bardic_inspiration\src\app**
+**The source code can be found under the following path: bardic_inspiration\src\app** <br/>
+(Note: The openapi key has been deactivated as a precautionary measure for security reasons.) 
