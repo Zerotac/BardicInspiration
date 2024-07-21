@@ -1,5 +1,5 @@
 # BardicInspiration
-The Project "Bardic Inspiration" is a prototype for the university course "Intelligent User Interfaces".
+The Project "Bardic Inspiration" is a prototype for the university course "Intelligent User Interfaces". <br/>
 The project members are: Bettina Feibel, Christoph Schuster, David Schmalzl
 
 ## How to use the prototype?
